@@ -7,40 +7,127 @@
 
     <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/estilo.css">
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>GUIA DE HOTELES</h1>
+    <div class="jumbotron">
+        <h1>GUIA DE HOTELES</h1>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm">
-                primera columnas
-                <div class="col">
-                    <li>producto 1</li>
-                    <li>producto 2</li>
-                    <li>producto 3</li>
+                <div class="col-sm-4">
+                    <p>
+                        <h3>como funciona?</h3>
+                        <p>busca los hoteles de acuerdo a tu preferencia</p>
+                    </p>
+                </div>            
+            <div class="col-sm-4">
+                <p>
+                    <h3>Donde puedo reservar</h3>
+                    <p>elegi la ciudad que te interesa y luego realice la reserva con tus datos</p>
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <p>
+                    <h3>como pago?</h3>
+                    <p>utiliza tu targeta favorita </p>
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class=" d-flex flex-wrap flex-row-reverse">
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel Guatemla</h3>
+                    <p>el hotel esta ubicado en la mera ciudad de Guatemla </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="col-sm">
-                segunda columnas
-                <div class="col">
-                    <li>producto 1</li>
-                    <li>producto 2</li>
-                    <li>producto 3</li>
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel de Antigua Guatemla</h3>
+                    <p>el hotel esta ubicado en la mera ciudad de Antigua Guatemla </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>                    
+            </div>
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel la Riviera de Atitlan</h3>
+                    <p>el hotel esta ubicado en la orillad del lago Atitlan </p>
+                    
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
                 </div>
             </div>
-            <div class="col-sm">
-                tercera columnas
-                <div class="col">
-                    <li>producto 1</li>
-                    <li>producto 2</li>
-                    <li>producto 3</li>
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel de Xela</h3>
+                    <p>el hotel esta ubicado en el centro historico de Xela </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel de Momostenago</h3>
+                    <p>el hotel esta ubicado en el centro historico </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel de Totonicapan</h3>
+                    <p>el hotel esta ubicado en el centro </p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                </div>
+            </div>
+            <div class="card-hoteles d-flex flex-column justify-content-between">
+                <div>
+                    <h3>Hotel de San Lucas</h3>
+                    <p>el hotel esta ubicado en el centro de san Lucas</p>
+                </div>
+                <div>
+                    <button class="btn btn-primary btn-reserva">Reservar</button>
                 </div>
             </div>
         </div>
-
     </div>
-
+    <footer class="footer">
+        <div class="row d-flex ">
+            <div class="col-sm-4 d-flex flex-column">
+                <a href="http://www.facebook.com">facebook</a>
+                <a href="http://www.twitter.com">twitter</a>
+                <a href="http://www.histagram.com">histagram</a>
+                <a href="http://www.google.com">google</a>
+            </div>
+            <div class="col-sm-4">
+                <address>
+                    <h3>oficinas centrales</h3>
+                    <p>Guatemla 502, Antigua Guatemla</p>
+                    <p>+283893849389</p>
+                    <p>contatos.com.gt</p>
+    
+                </address>
+            </div>
+            <div class="col-sm-4 d-flex flex-column align-items-end">
+                <a href="http://www.facebook.com">Nosotros</a>
+                <a href="http://www.twitter.com">Precios</a>
+                <a href="http://www.histagram.com">terminos</a>
+                <a href="http://www.google.com">Contatos</a>
+            </div>
+        </div>        
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modulesjquery/dist/jquery.min.js"></script>
