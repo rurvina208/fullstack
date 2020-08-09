@@ -4,6 +4,7 @@
   "description": "Nuestro primer proyecto de NodeJS",
   "main": "index.html",
   "scripts": {
+  "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Anibal Barrera",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/usrbitbucket/guia-hotel#readme"
+  "homepage": "https://bitbucket.org/usrbitbucket/guia-hotel#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
