@@ -97,7 +97,7 @@
             <div class="card card-hoteles d-flex flex-column justify-content-between ml-2">
                 <img src="./imagenes/atitla2.jpg" class="card-img-top" alt="Responsive image" height="39%">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel la Riviera de Atitlan</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="las primeras reservacioniones cuenta con un descuento del 10%">Hotel la Riviera de Atitlan</h5>
                     <h6 class="card-subtitle text-muted">Panajachel Guatemla</h6>
                     <p class="card-text">el hotel esta ubicado en la orillad del lago Atitlan </p>
                     
@@ -136,7 +136,7 @@
                     <p class="card-text">el hotel esta ubicado en el centro </p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva">Reservar</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta las promociones vigentes">Reservar</button>
                 </div>
             </div>
             <div class="card card-hoteles d-flex flex-column justify-content-between ml-2">
@@ -221,6 +221,11 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    
+    <script>
+        $(function () {
+        $("[data-toggle='tooltip']").tooltip();
+        $("[data-toggle='popover']").popover();
+    });
+    </script>
   </body>
 </html>
