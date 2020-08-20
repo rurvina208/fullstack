@@ -82,6 +82,7 @@
                     <button class="btn btn-primary btn-reserva"><span class="oi oi-plus"></span>Reservar</button>
                 </div>
             </div>
+            
             <div class="card card-hoteles d-flex flex-column justify-content-between ml-2">
                 <img src="./imagenes/antigua.jpg" class="card-img-top" alt="Responsive image">
                 <div class="card-body">
@@ -145,10 +146,48 @@
                     <!--<img class="card-img-top" src="./imagenes/atitlan.jpg" alt="hotel img"-->
                     <h6 class="card-subtitle text-muted">Guatemla</h6>
                     <p class="card-text">el hotel esta ubicado en el centro de San Lucas</p>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva">Reservar</button>
                 </div>
+            </div>
+        </div>
+    <!--uso del modal -->
+        <div class="modal fade" id="contacto" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Contacto de hoteles</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                      <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Nombre :</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                      <div class="form-group">
+                          <label for="message-text" class="col-form-name">Mensaje</label>  
+                          <textarea class="form-control" name="message-id" id="message-id" cols="20" rows="5"></textarea>  
+                        </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-success" data-dismiss="modal">Enviar</button>
+                  
+                </div>
+              </div>
             </div>
         </div>
     </div>    

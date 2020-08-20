@@ -113,18 +113,51 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="targetas" role="tabpanel" aria-labelledby="targetas-tab">
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header" style="background-color: blue; color: white;">
-                            Targetas Aceptadas
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Targeta Basica
+                          </button>
+                        </h2>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            Podes reservar 5 veces sin interes
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Targetas Basicas</li>
-                            <li class="list-group-item">Tagetas Vip</li>
-                            <li class="list-group-item">Targetas Black</li>
-                        </ul>
+                      </div>
                     </div>
-                </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Targeta Platino
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Podes reservara para eventos, como graduación, cumpleaños, bodas y entre otros actividades
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Targetas Oro
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                          Podes reservar 5 veces sin interes y para ello habra regalos.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
             <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
                 Comentarios
