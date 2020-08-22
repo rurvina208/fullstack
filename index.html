@@ -68,6 +68,27 @@
                 </div>
             </div>
         <hr>
+        <div id="carouselhoteles" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./imagenes/antigua.jpg" class="d-block w-100" alt="primier slide">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/atitla2.jpg" class="d-block w-100" alt="segundo slide">
+              </div>
+              <div class="carousel-item">
+                <img src="./imagenes/atitlan.jpg" class="d-block w-100" alt="tercer slide">
+              </div>
+              <a class="carousel-control-prev" href="#carouselhoteles" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselhoteles" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+            </div>
+          </div>
         <!--img src="./imagenes/img1.jpg" class="img-fluid" alt="Responsive image" width="100%"-->
         <div class=" d-flex flex-wrap flex-row-reverse">
             <div class="card card-hoteles d-flex flex-column justify-content-between ml-2">
@@ -225,6 +246,9 @@
         $(function () {
         $("[data-toggle='tooltip']").tooltip();
         $("[data-toggle='popover']").popover();
+        $(".carousel").carousel({
+            interval: 100
+            });
     });
     </script>
   </body>
