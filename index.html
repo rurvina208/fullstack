@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/estilo.css">
-   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+   <link rel="stylesheet shortcut icon" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet shortcut icon" href="css/estilo.css">
+   <link rel="stylesheet shortcut icon" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <title>Hello, world!</title>
   </head>
   <body>
@@ -167,7 +167,7 @@
                     <!--<img class="card-img-top" src="./imagenes/atitlan.jpg" alt="hotel img"-->
                     <h6 class="card-subtitle text-muted">Guatemla</h6>
                     <p class="card-text">el hotel esta ubicado en el centro de San Lucas</p>
-                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactobtn">Contacto</button>
                 </div>
                 <div>
                     <button class="btn btn-primary btn-reserva">Reservar</button>
@@ -240,15 +240,37 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="module" src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
         $(function () {
         $("[data-toggle='tooltip']").tooltip();
         $("[data-toggle='popover']").popover();
-        $(".carousel").carousel({
-            interval: 100
-            });
+        
+        $("#contacto").on('show.bs.modal', function (e) {
+            console.log("el modal se esta mostrando");
+            $("#contactobtn").removeClass('btn-outline-success');
+            $("#contactobtn").addClass('btn-primary');
+            $("#contactobtn").prop('disabled',true);
+        });
+        $("#contacto").on('shown.bs.modal', function (e) {
+            console.log("el modal contacto se mostro despues");
+        });
+        $("#contacto").on('hide.bs.modal', function (e) {
+            console.log("el modal se oculto");
+        });
+        $("#contacto").on('hidden.bs.modal', function (e) {
+            console.log("el modal se esta ocultando");
+            $("#contactobtn").prop('disabled',false);
+        });
+        });
+    //funcion de javascrip que permite cambiar el tiempo de transicion del carousel
+    $( document ).ready(function(){
+    $('.carousel').carousel({
+      interval: 2000
+    });
     });
     </script>
   </body>
